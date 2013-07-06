@@ -18,12 +18,6 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-# Blogroll
-LINKS = (
-    ('Pelican', 'http://getpelican.com/'),
-    ('Python.org', 'http://python.org/'),
-)
-
 # Social widget
 SOCIAL = (
     ('Twitter', 'http://twitter.com/bhrut'),
@@ -33,14 +27,14 @@ SOCIAL = (
 THEME = "theme"
 DIRECT_TEMPLATES = ('index', 'archives',)
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 10
 TYPOGRIFY = True
 
 PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
-ARCHIVES_SAVE_AS = 'archives/index.html'
+ARCHIVES_SAVE_AS = 'archive/index.html'
 CATEGORY_URL = 'category/{slug}/'
 #CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 CATEGORY_SAVE_AS = False

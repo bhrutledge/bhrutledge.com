@@ -1,8 +1,8 @@
-Title: First Post
-Date: 2010-12-03 10:20
+Title: Second Post
+Date: 2013-06-01 10:20
 Category: Python
 Tags: pelican, publishing
-Summary: Summary of my first post
+Summary: Summary of my second post
 
 ### Heading
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque bibendum felis vitae tortor fringilla, ac pharetra lacus faucibus. Suspendisse cursus imperdiet neque elementum pharetra. Aenean tincidunt lacinia purus, dapibus egestas turpis viverra nec. Suspendisse vel iaculis orci. Curabitur scelerisque ullamcorper lobortis. Suspendisse pulvinar ante turpis, a pulvinar felis lobortis eu. Phasellus varius, tortor bibendum scelerisque aliquet, eros orci aliquet tellus, ut viverra tortor ipsum sed urna. Phasellus faucibus orci vitae purus consectetur, ut iaculis ante vulputate. Integer viverra lacus sed nibh vulputate lacinia. In lacus sem, aliquet nec leo a, tristique sagittis dolor. Integer mollis nisl vitae pharetra ornare.

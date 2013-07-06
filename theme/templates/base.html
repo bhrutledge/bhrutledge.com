@@ -17,13 +17,12 @@
     {% endif %}
     
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="{{ SITE_URL }}/theme/css/normalize.css" />
-    <link rel="stylesheet" href="{{ SITE_URL }}/theme/css/main.css" />
+    <link rel="stylesheet" href="{{ SITE_URL }}/theme/css/gridless.css" />
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 
-    <header>
+    <header id="banner">
         <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
         <nav>
             <ul>
@@ -34,15 +33,11 @@
         </nav>
     </header>
 
-    <div>
+    <div id="content">
         {% block content %}
         {% endblock %}
     </div>
-
-    <footer>
-        <p><a href="{{ SITEURL }}/archives/">Archives</a></p>
-    </footer>
-
+    
     <script src="{{ SITE_URL }}/js/plugins.js"></script>
     <script src="{{ SITE_URL }}/js/main.js"></script>
 </body>

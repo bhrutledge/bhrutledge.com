@@ -1,14 +1,14 @@
 {% extends "base.html" %}
-{% block title %}Archives | {{ super() }}{% endblock %}
+{% block title %}Archive | {{ super() }}{% endblock %}
 
 {% block content %}
-<dl>
+<ul>
 {% for article in dates %}
-    <dt><strong><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></strong></dt>
-    <dd>
-        <p>{{ article.locale_date }}</p>
-        {{ article.summary }}
-    </dd>
+<li>
+    <strong><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">{{ article.title }}</a></strong><br />
+    <small>{{ article.locale_date }}</small>
+    {{ article.summary }}
+</li>
 {% endfor %}
-</dl>
+</ul>
 {% endblock %}
