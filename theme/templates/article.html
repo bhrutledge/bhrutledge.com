@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title|striptags }} | {{ super() }}{% endblock %}
+{% block content %}
+    <article>
+        <header>
+            <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">{{ article.title }}</a></h2>
+            <p>{{ article.locale_date }}</p>
+        </header>
+        <section>
+        {{ article.content }}
+        </section>
+    </article>
+{% endblock %}
