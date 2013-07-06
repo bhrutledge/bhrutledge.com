@@ -18,12 +18,6 @@ FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
-# Social widget
-SOCIAL = (
-    ('Twitter', 'http://twitter.com/bhrut'),
-    ('Facebook', 'http://facebook.com/bhrutledge'),
-)
-
 THEME = "theme"
 DIRECT_TEMPLATES = ('index', 'archives',)
 DEFAULT_DATE_FORMAT = "%B %d, %Y"

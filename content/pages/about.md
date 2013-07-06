@@ -3,15 +3,14 @@ Title: About
 ### Me
 
 * I live in Somerville, Massachusetts.
-* I work at [Belmont Wheelworks](http://wheelworks.com).
-* I play trumpet in [Hallelujah The Hills](http://hallelujahthehills.com).
-* I also like to ride bikes, take pictures, and write code.
+* I am interested in food, personal development, and sustainability.
+* I like to play music, ride bikes, take pictures, and write code.
 * I am not very social on the Internet.
     * [Twitter](http://twitter.com/bhrut)
     * [Facebook](http://facebook.com/bhrutledge)
     * [LinkedIn](http://www.linkedin.com/in/bhrutledge)
-    * [Github](http://github.com/bhrutledge)
     * [Flickr](http://flickr.com/bhrutledge)
+    * [Github](http://github.com/bhrutledge)
 
 ### This Site
 

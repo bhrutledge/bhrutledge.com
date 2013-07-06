@@ -389,11 +389,14 @@ header, footer {
     width: 100%;
 }
 
-nav li {
+.nav {
+    text-transform: uppercase;
+}
+
+.nav li {
     list-style: none;
     display: inline;
     padding: 0 1em;
-    text-transform: uppercase;
 }
 
 #content {

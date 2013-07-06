@@ -9,7 +9,9 @@
 {% endfor %}
 
 {% if articles_page.has_other_pages() %}
-<a href="{{ SITE_URL }}/archive/">Archive</a>
+<footer>
+<p class="nav"><a href="{{ SITE_URL }}/archive/">Archive</a></p>
+</footer>
 {% endif %}
 
 {% endblock content %}
