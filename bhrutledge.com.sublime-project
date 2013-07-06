@@ -1,0 +1,11 @@
+{
+	"folders":
+	[
+		{
+			"folder_exclude_patterns": ["output", "bin", "include", "lib"],
+			"file_exclude_patterns": [".Python", "develop_server.sh"],
+			"follow_symlinks": true,
+			"path": "/Users/brian/Code/Envs/bhrutledge.com"
+		}
+	]
+}

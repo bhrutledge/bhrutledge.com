@@ -245,11 +245,11 @@ dl dd {
 
 a, a:visited {
     text-decoration: none;
-    color: #09c;
+    color: #0099cc;
 }
 
 a:hover {
-    border-bottom: 1px solid;
+    color: #00607f;
 }
 
 a:focus {
@@ -383,7 +383,7 @@ header, article, aside, section {
     box-sizing: border-box;
 }
 
-header {
+header, footer {
     margin-bottom: 1.625em;
     text-align: center;
     width: 100%;
