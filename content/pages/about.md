@@ -10,7 +10,6 @@ Title: About
     * [Facebook](http://facebook.com/bhrutledge)
     * [LinkedIn](http://www.linkedin.com/in/bhrutledge)
     * [Flickr](http://flickr.com/bhrutledge)
-    * [Github](http://github.com/bhrutledge)
 
 ### This Site
 

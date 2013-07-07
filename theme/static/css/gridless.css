@@ -63,7 +63,7 @@ body, button, input, select, textarea {
 }
 
 /* Add and/or remove tags as your baseline grid needs */
-p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldset, menu, img, figure, figcaption, button, hr {
+p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldset, menu, figure, figcaption, button, hr {
     margin: 0 0 1.625em;
 }
 
@@ -261,13 +261,6 @@ a:hover, a:active {
     outline: none;
 }
 
-/* Figures
----------------------------------------- */
-
-figure {
-    margin: 0;
-}
-
 /* Embedded content
 ---------------------------------------- */
 
@@ -374,7 +367,6 @@ sub {
 body {
     margin: 0 auto;
     padding: 1.625em;
-    max-width: 940px;
 }
 
 header, article, aside, section { 
@@ -406,13 +398,12 @@ header, footer {
 }
 
 article {
-    margin: 3.25em auto;
+    margin: 3.25em auto 6.5em;
 }
 
 article header h2 {
     margin-bottom: 0;
 }
-
 
 /* Media queries
 ---------------------------------------- */
@@ -431,10 +422,20 @@ article header h2 {
 
 @media only screen and (min-width: 768px) {
     /* Tablets/netbooks (768px+) styles go here */
+    
+    figure.landscape {
+        width: 52em;
+        margin-left: -6em; /* (52-40)/2 */
+    }
 }
 
 @media only screen and (min-width: 1024px) { 
     /* Desktops (1024px+) styles go here */
+
+    figure.landscape {
+        width: 60em;
+        margin-left: -10em; /* (60-40)/2 */
+    }
 }
 
 @media only screen and (min-width: 1280px) {  
