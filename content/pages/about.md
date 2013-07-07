@@ -15,5 +15,5 @@ Title: About
 
 * Powered by [Pelican](http://docs.getpelican.com/en/latest/)
 * Hosted by [Webfaction](https://www.webfaction.com/)
-* Inspired by [Duncan Davidson](http://duncandavidson.com/blog/) and [Tulio Jarocki](http://tuliojarocki.com/)
+* Inspired by [Duncan Davidson](http://duncandavidson.com/blog/)
 * Source code on [Github](https://github.com/bhrutledge/bhrutledge.com)
