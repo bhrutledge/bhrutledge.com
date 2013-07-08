@@ -9,7 +9,7 @@ Title: About
     * [Twitter](http://twitter.com/bhrut)
     * [Facebook](http://facebook.com/bhrutledge)
     * [LinkedIn](http://www.linkedin.com/in/bhrutledge)
-    * [Flickr](http://flickr.com/bhrutledge)
+    * [brian@bhrutledge.com](mailto:brian@bhrutledge.com)
 
 ### This Site
 
