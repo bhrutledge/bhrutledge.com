@@ -37,6 +37,7 @@ nosetests.xml
 
 # Pelican
 output
+content
 
 # Sublime Text
 *.sublime-workspace
