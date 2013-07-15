@@ -408,40 +408,64 @@ article header h2 {
     margin-bottom: 0;
 }
 
+.portrait,
+.landscape {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Media queries
 ---------------------------------------- */
-
-/* The media queries included in here are only placeholder. Modify them as your content requires */
 
 @media only screen and (max-width: 1023px) {
     html {
         font-size: 14px;
     }
+
+    .portrait {
+        max-width: 17em; /* 238/14 */
+    }
 }
 
 @media only screen and (min-width: 480px) {
-    /* Wide mobile (480px+) styles go here */
+    .portrait {
+        max-width: 28em; /* 392/14 */
+    }
 }
 
-@media only screen and (min-width: 768px) {
-    /* Tablets/netbooks (768px+) styles go here */
-    
-    figure.landscape {
-        width: 52em;
+@media only screen and (min-width: 768px) {    
+    .landscape {
+        width: 52em; /* 728/14 */
         margin-left: -6em; /* (52-40)/2 */
+    }
+
+    .portrait {
+        max-width: 35em; /* 490/14 */
     }
 }
 
 @media only screen and (min-width: 1024px) { 
-    /* Desktops (1024px+) styles go here */
-
-    figure.landscape {
-        width: 60em;
+    .landscape {
+        width: 60em; /* 960/16 */
         margin-left: -10em; /* (60-40)/2 */
+    }
+
+    .portrait {
+        width: 40em;
+        max-width: none;
     }
 }
 
 @media only screen and (min-width: 1280px) {  
+    .landscape {
+        width: 75em; /* 1200/16 */
+        margin-left: -17.5em; /* (75-40)/2 */
+    } 
+
+    .portrait {
+        width: 50em; /* 800/16 */
+        margin-left: -5em; /* (50-40)/2 */
+    }
 }
 
 /* Print styles
