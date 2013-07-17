@@ -84,6 +84,7 @@ h1 {
     margin: 0 0 .619047619em;
     text-transform: uppercase;
     font-weight: normal;
+    color: #111;
 }
 
 h2 {
@@ -91,6 +92,7 @@ h2 {
     line-height: 1;
     margin: 0 0 1em;
     font-weight: normal;
+    color: #111;
 }
 
 
@@ -417,6 +419,11 @@ article header h2 {
     margin-right: auto;
 }
 
+.portrait img,
+.landscape img {
+    border-radius: 4px;
+}
+
 /* Media queries
 ---------------------------------------- */
 
@@ -459,17 +466,7 @@ article header h2 {
     }
 }
 
-@media only screen and (min-width: 1280px) {  
-    .landscape {
-        width: 75em; /* 1200/16 */
-        margin-left: -17.5em; /* (75-40)/2 */
-    } 
 
-    .portrait {
-        width: 50em; /* 800/16 */
-        margin-left: -5em; /* (50-40)/2 */
-    }
-}
 
 /* Print styles
 ---------------------------------------- */
