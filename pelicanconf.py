@@ -29,9 +29,9 @@ DEFAULT_DATE_FORMAT = "%B %d, %Y"
 DEFAULT_PAGINATION = 10
 TYPOGRIFY = True
 
-PAGE_URL = '{slug}/'
+PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}'
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
 MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
 YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
