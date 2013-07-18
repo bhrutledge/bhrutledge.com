@@ -17,8 +17,8 @@
     {% endif %}
     
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="{{ SITE_URL }}/theme/css/gridless.css" />
-    <script src="{{ SITE_URL}}/theme/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/gridless.css" />
+    <script src="{{ SITEURL }}/theme/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 
@@ -26,6 +26,7 @@
         <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
         <nav>
             <ul class="nav">
+                <!--<li{% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>-->
             {% for p in pages %}
                 <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
@@ -42,6 +43,6 @@
         <p><small>All content &copy; 2013 Brian H. Rutledge, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">CC BY-NC-SA</a></small>.</p>
     </footer>
     
-    <script src="{{ SITE_URL }}/js/main.js"></script>
+    <script src="{{ SITEURL }}/js/main.js"></script>
 </body>
 </html>

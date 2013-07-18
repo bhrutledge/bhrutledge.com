@@ -24,9 +24,9 @@ STATIC_PATHS = ['images', 'photos']
 DEFAULT_CATEGORY = "Uncategorized"
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_DATE = "fs"
-FILENAME_METADATA ='(?P<date>\d{4}-\d{2}-\d{2})_(?P<slug>.*)'
+FILENAME_METADATA ='(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 5
 TYPOGRIFY = True
 
 PAGE_URL = '{slug}'
