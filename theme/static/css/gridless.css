@@ -443,6 +443,10 @@ article header h2 {
     margin-right: auto;
 }
 
+.portrait {
+    max-width: 70%;
+}
+
 .portrait img,
 .landscape img {
     border-radius: 4px;
@@ -455,16 +459,9 @@ article header h2 {
     html {
         font-size: 14px;
     }
-
-    .portrait {
-        max-width: 17em; /* 238/14 */
-    }
 }
 
 @media only screen and (min-width: 480px) {
-    .portrait {
-        max-width: 22em; /* 308/14 */
-    }
 }
 
 @media only screen and (min-width: 768px) {    
@@ -472,9 +469,9 @@ article header h2 {
         width: 52em; /* 728/14 */
         margin-left: -9em; /* (52-34)/2 */
     }
-    
+
     .portrait {
-        max-width: 28em; /* 392/14 */
+        max-width: none;
     }
 }
 
@@ -485,13 +482,10 @@ article header h2 {
     }
 
     .portrait {
-        width: 40em;
-        max-width: none;
+        width: 40em; /* 640/16 */
         margin-left: -3em; /* (40-34)/2 */
     }
 }
-
-
 
 /* Print styles
 ---------------------------------------- */
