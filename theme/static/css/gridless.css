@@ -420,7 +420,7 @@ header, footer {
 }
 
 #content {
-    max-width: 40em;
+    max-width: 34em;
     margin: 3.25em auto 6.5em;
 }
 
@@ -463,30 +463,31 @@ article header h2 {
 
 @media only screen and (min-width: 480px) {
     .portrait {
-        max-width: 28em; /* 392/14 */
+        max-width: 22em; /* 308/14 */
     }
 }
 
 @media only screen and (min-width: 768px) {    
     .landscape {
         width: 52em; /* 728/14 */
-        margin-left: -6em; /* (52-40)/2 */
+        margin-left: -9em; /* (52-34)/2 */
     }
-
+    
     .portrait {
-        max-width: 35em; /* 490/14 */
+        max-width: 28em; /* 392/14 */
     }
 }
 
 @media only screen and (min-width: 1024px) { 
     .landscape {
         width: 60em; /* 960/16 */
-        margin-left: -10em; /* (60-40)/2 */
+        margin-left: -13em; /* (60-34)/2 */
     }
 
     .portrait {
         width: 40em;
         max-width: none;
+        margin-left: -3em; /* (40-34)/2 */
     }
 }
 
