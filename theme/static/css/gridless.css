@@ -441,14 +441,15 @@ article header h2 {
 .landscape {
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 .portrait {
     max-width: 70%;
 }
 
-.portrait img,
-.landscape img {
+.portrait,
+.landscape {
     border-radius: 4px;
 }
 
@@ -468,10 +469,11 @@ article header h2 {
     .landscape {
         width: 52em; /* 728/14 */
         margin-left: -9em; /* (52-34)/2 */
+        max-width: none;
     }
 
     .portrait {
-        max-width: none;
+        max-width: 100%;
     }
 }
 
@@ -484,6 +486,7 @@ article header h2 {
     .portrait {
         width: 40em; /* 640/16 */
         margin-left: -3em; /* (40-34)/2 */
+        max-width: none;
     }
 }
 
