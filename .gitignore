@@ -35,9 +35,5 @@ nosetests.xml
 .project
 .pydevproject
 
-# Pelican
-output
-content
-
 # Sublime Text
 *.sublime-workspace

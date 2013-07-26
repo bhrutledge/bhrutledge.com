@@ -15,8 +15,6 @@ RELATIVE_URLS = False
 
 FEED_ATOM = 'feeds/posts.xml'
 
-DELETE_OUTPUT_DIRECTORY = True
-
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""

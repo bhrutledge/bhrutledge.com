@@ -3,7 +3,7 @@ PELICAN=pelican
 PELICANOPTS=
 
 BASEDIR=$(CURDIR)
-INPUTDIR=$(BASEDIR)/content
+INPUTDIR=$(HOME)/Dropbox/bhrutledge.com/content
 OUTPUTDIR=$(HOME)/Sites/bhrutledge
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHDIR=$(HOME)/tmp/bhrutledge
@@ -22,8 +22,7 @@ help:
 	@echo '   make clean                       remove the generated files         '
 	@echo '   make regenerate                  regenerate files upon modification '
 	@echo '   make publish                     generate using production settings '
-	@echo '   ssh_upload                       upload the web site via SSH        '
-	@echo '   rsync_upload                     upload the web site via rsync+ssh  '
+	@echo '   make upload                      upload the web site via rsync+ssh  '
 	@echo '                                                                       '
 
 
@@ -41,10 +40,7 @@ regenerate: clean
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(PUBLISHDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-ssh_upload: publish
-	scp -P $(SSH_PORT) -r $(PUBLISHDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
-
-rsync_upload: publish
+upload: publish
 	rsync -e "ssh -p $(SSH_PORT)" -P -rvzp --delete $(PUBLISHDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
 
-.PHONY: html help clean regenerate publish ssh_upload rsync_upload 
+.PHONY: html help clean regenerate publish upload
