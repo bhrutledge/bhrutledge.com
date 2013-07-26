@@ -17,18 +17,18 @@
     {% endif %}
     
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/gridless.css" />
-    <script src="{{ SITEURL }}/theme/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link rel="stylesheet" href="/theme/css/gridless.css" />
+    <script src="/theme/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 
     <header id="banner">
-        <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+        <h1><a href="/">{{ SITENAME }}</a></h1>
         <nav>
             <ul class="nav">
-                <!--<li{% if page_name == 'index' %} class="active"{% endif %}><a href="{{ SITEURL }}">Home</a></li>-->
+                <!--<li{% if page_name == 'index' %} class="active"{% endif %}><a href="/">Home</a></li>-->
             {% for p in pages %}
-                <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                <li{% if p == page %} class="active"{% endif %}><a href="/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
             </ul>
         </nav>
@@ -43,6 +43,6 @@
         <p><small>All content &copy; 2013 Brian H. Rutledge, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">CC BY-NC-SA</a></small>.</p>
     </footer>
     
-    <script src="{{ SITEURL }}/theme/js/main.js"></script>
+    <script src="/theme/js/main.js"></script>
 </body>
 </html>

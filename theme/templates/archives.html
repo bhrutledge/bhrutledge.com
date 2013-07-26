@@ -4,7 +4,7 @@
 {% block content %}
 <ul>
 {% for article in dates %}
-<li><p><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">{{ article.title }}</a><br />
+<li><p><a href="/{{ article.url }}" rel="bookmark">{{ article.title }}</a><br />
     <small>{{ article.locale_date }}</small></p>
     {# {{ article.summary }} #}
 </li>

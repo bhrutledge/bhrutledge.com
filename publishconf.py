@@ -11,8 +11,6 @@ sys.path.append(os.curdir)
 from pelicanconf import *
 
 SITEURL = 'http://bhrutledge.com'
-RELATIVE_URLS = False
-
 FEED_ATOM = 'feeds/posts.xml'
 
 # Following items are often useful when publishing
