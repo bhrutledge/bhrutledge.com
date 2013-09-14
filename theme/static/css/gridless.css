@@ -402,7 +402,7 @@ header, footer {
 }
 
 .nav {
-    text-transform: uppercase;
+    color: #111;
 }
 
 .nav li {

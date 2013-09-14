@@ -11,3 +11,15 @@
     </header>
     {{ article.content }}
 </article>
+
+<footer>
+<p class="nav">
+{% if article.prev_article %}
+Previous: <a href="/{{ article.prev_article.url}}">{{ article.prev_article.title }}</a><br />
+{% endif %}
+{% if article.next_article %}
+Next: <a href="/{{ article.next_article.url}}">{{ article.next_article.title }}</a><br />
+{% endif %}
+<a href="/archive/">All Posts</a>
+</p>
+</footer>
