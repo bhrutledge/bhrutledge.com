@@ -17,21 +17,20 @@ TRANSLATION_FEED_ATOM = None
 THEME = "theme"
 DIRECT_TEMPLATES = ('index', 'archives',)
 STATIC_PATHS = ['images', 'photos']
+PLUGIN_PATH = '../pelican-plugins'
 
 DEFAULT_CATEGORY = "Uncategorized"
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_DATE = "fs"
 FILENAME_METADATA ='(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 1
 TYPOGRIFY = True
 
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
-ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}'
-ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
-MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
-YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+ARTICLE_URL = '{slug}'
+ARTICLE_SAVE_AS = '{slug}/index.html'
 ARCHIVES_SAVE_AS = 'archive/index.html'
 CATEGORY_URL = 'category/{slug}/'
 #CATEGORY_SAVE_AS = 'category/{slug}/index.html'

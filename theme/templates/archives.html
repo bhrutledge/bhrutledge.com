@@ -2,12 +2,13 @@
 {% block title %}Archive | {{ super() }}{% endblock %}
 
 {% block content %}
-<ul>
 {% for article in dates %}
-<li><p><a href="/{{ article.url }}" rel="bookmark">{{ article.title }}</a><br />
-    <small>{{ article.locale_date }}</small></p>
+<article>
+    <header>
+        <h2><a href="/{{ article.url }}" rel="bookmark">{{ article.title }}</a></h2>
+        <p><small>{{ article.locale_date }}</small></p>
+    </header>
     {# {{ article.summary }} #}
-</li>
+</article>
 {% endfor %}
-</ul>
 {% endblock %}

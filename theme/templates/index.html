@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+
+{% block header %}
+<p>I live in Somerville, Massachusetts. I&#8217;m interested in food, personal development, sustainability, and technology. I like to play music, ride bikes, take pictures, and write&nbsp;code. This is my little home on the Web for things I want to share.</p>
+{% endblock %}
+
 {% block content %}
 
 {% block content_title %}
@@ -8,10 +13,6 @@
 {% include '_article.html' %}
 {% endfor %}
 
-{% if articles_page.has_other_pages() %}
-<footer>
-<p class="nav"><a href="/archive/">Archive</a></p>
-</footer>
-{% endif %}
+{% include '_footer.html' %}
 
 {% endblock content %}

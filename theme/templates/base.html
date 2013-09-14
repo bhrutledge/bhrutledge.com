@@ -24,14 +24,8 @@
 
     <header id="banner">
         <h1><a href="/">{{ SITENAME }}</a></h1>
-        <nav>
-            <ul class="nav">
-                <!--<li{% if page_name == 'index' %} class="active"{% endif %}><a href="/">Home</a></li>-->
-            {% for p in pages %}
-                <li{% if p == page %} class="active"{% endif %}><a href="/{{ p.url }}">{{ p.title }}</a></li>
-            {% endfor %}
-            </ul>
-        </nav>
+        {% block header %}
+        {% endblock %}
     </header>
 
     <section id="content">
@@ -39,8 +33,12 @@
         {% endblock %}
     </section>
 
-    <footer>
-        <p><small>All content &copy; 2013 Brian H. Rutledge, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">CC BY-NC-SA</a></small>.</p>
+    <footer id="about">
+        <p>Email me at <a href="mailto:brian@bhrutledge.com">brian@bhrutledge.com</a>.<br />
+        Find me on <a href="http://twitter.com/bhrut">Twitter</a>, <a href="http://facebook.com/bhrutledge">Facebook</a>, and <a href="http://www.linkedin.com/in/bhrutledge">LinkedIn</a>.</p>
+
+        <p><small>All content &copy; 2013 Brian H. Rutledge, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">CC BY-NC-SA</a>.<br />
+        Powered by <a href="http://docs.getpelican.com/en/latest/">Pelican</a>, hosted by <a href="https://www.webfaction.com/">Webfaction</a>, source code on <a href="https://github.com/bhrutledge/bhrutledge.com">Github</a>.</small></p>
     </footer>
     
     <script src="/theme/js/main.js"></script>
