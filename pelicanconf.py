@@ -18,7 +18,7 @@ THEME = "theme"
 DIRECT_TEMPLATES = ('index', 'archives',)
 STATIC_PATHS = ['images', 'photos']
 PLUGIN_PATH = '../pelican-plugins'
-PLUGINS = ['neighbors']
+PLUGINS = ['neighbors', 'img_class']
 
 DEFAULT_CATEGORY = "Uncategorized"
 USE_FOLDER_AS_CATEGORY = False
