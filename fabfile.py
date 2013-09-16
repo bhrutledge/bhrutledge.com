@@ -10,8 +10,7 @@ env.pelican_args = ''
 
 def clean():
     if os.path.isdir(env.pelican_output):
-        local('rm -rf {pelican_output}'.format(**env))
-        local('mkdir {pelican_output}'.format(**env))
+        local('find {pelican_output} -mindepth 1 -delete'.format(**env))
 
 
 def build():
@@ -33,4 +32,4 @@ def publish():
     with settings(pelican_output=os.path.expanduser('~/webapps/pelican'),
                   pelican_conf='publishconf.py'):
         rebuild()
-        local('chmod -R a+RX {pelican_output}'.format(**env))
+        local('chmod -R a+rX {pelican_output}'.format(**env))
