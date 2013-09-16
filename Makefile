@@ -37,6 +37,7 @@ regenerate: clean
 publish:
 	[ ! -d $(PUBLISHDIR) ] || find $(PUBLISHDIR) -mindepth 1 -delete
 	$(PELICAN) $(INPUTDIR) -o $(PUBLISHDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	chmod -R a+rX $(PUBLISHDIR)
 
 upload:
 	[ ! -d $(TMPDIR) ] || find $(TMPDIR) -mindepth 1 -delete
