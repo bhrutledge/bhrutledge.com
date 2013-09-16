@@ -251,13 +251,17 @@ dl dd {
 /* Links
 ---------------------------------------- */
 
-a, a:visited {
+a {
     text-decoration: none;
     color: #CC7E00;
 }
 
-a:hover {
+a:visited {
     color: #7F4F00;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 a:focus {
@@ -395,10 +399,6 @@ header, footer {
 
 #banner h1 a {
     color: #111;
-}
-
-#banner h1 a:hover {
-    color: #555;
 }
 
 .nav {
