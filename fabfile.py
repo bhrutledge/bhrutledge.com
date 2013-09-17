@@ -29,7 +29,12 @@ def regenerate():
 
 
 def publish():
-    with settings(pelican_output=os.path.expanduser('~/webapps/pelican'),
-                  pelican_conf='publishconf.py'):
-        rebuild()
-        local('chmod -R a+rX {pelican_output}'.format(**env))
+    env.pelican_conf = 'publishconf.py'
+    local('git pull')
+    rebuild()
+    local('chmod -R a+rX {pelican_output}'.format(**env))
+
+
+def live():
+    env.pelican_output = os.path.expanduser('~/webapps/pelican')
+
