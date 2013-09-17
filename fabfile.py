@@ -29,9 +29,9 @@ def regenerate():
 
 
 def publish():
-    env.pelican_conf = 'publishconf.py'
     local('git pull')
-    rebuild()
+    with settings(pelican_conf='publishconf.py'):
+        rebuild()
     local('chmod -R a+rX {pelican_output}'.format(**env))
 
 
