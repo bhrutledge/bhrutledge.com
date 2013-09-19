@@ -3,6 +3,7 @@
 {% block pagetitle %}{% block title %}{{ article.title|striptags }}{% endblock %} | {{ SITENAME }}{% endblock %}
 {% block description %}{{ article.summary|striptags }}{% endblock %}
 {% block url %}{{ SITEURL }}/{{ article.url }}/{% endblock %}
+{% block id %}article.slug{% endblock %}
 
 {% block meta %}
 {{ meta_og('type', 'article') }}

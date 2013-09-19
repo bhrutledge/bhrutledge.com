@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="/theme/css/gridless.css" />
     <script src="/theme/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body id="{% block id %}index{% endblock %}">
 
     <header id="banner">
         <h1><a href="/">{{ SITENAME }}</a></h1>
@@ -49,7 +49,8 @@
     </section>
 
     <footer id="about">
-        <p>Email me at <a href="mailto:brian@bhrutledge.com">brian@bhrutledge.com</a>. I'm also on <a href="http://twitter.com/bhrut">Twitter</a>, <a href="http://facebook.com/bhrutledge">Facebook</a>, and <a href="http://linkedin.com/in/bhrutledge">LinkedIn</a>.</p>
+        <p>Email: <a href="mailto:brian@bhrutledge.com">brian@bhrutledge.com</a><br />
+        Elsewhere: <a href="http://twitter.com/bhrut">Twitter</a>, <a href="http://facebook.com/bhrutledge">Facebook</a>, <a href="http://linkedin.com/in/bhrutledge">LinkedIn</a>, <a href="https://github.com/bhrutledge">GitHub</a>, <a href="http://www.flickr.com/photos/bhrutledge">Flickr</a></p>
 
         <p><small>All content &copy; 2013 Brian H. Rutledge, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">CC BY-NC-SA</a>.</small></p>
     </footer>

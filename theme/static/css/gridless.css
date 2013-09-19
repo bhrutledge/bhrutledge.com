@@ -381,57 +381,41 @@ body {
     padding: 1.625em;
 }
 
-header, article, aside, section { 
+header, article, aside, section, footer { 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
 }
 
 header, footer {
-    margin-bottom: 1.625em;
     text-align: center;
-    width: 100%;
 }
 
 #banner {
-    margin-bottom: 4.875em;
+    max-width: 34em;
+    margin: 0 auto 3.25em;
 }
 
 #banner h1 a {
     color: #111;
 }
 
-.nav {
-    color: #111;
+#content {
+    max-width: 34em;
+    margin: 0 auto 3.25em;
 }
 
-.nav li {
-    list-style: none;
-    display: inline;
-    padding: 0 1em;
-}
-
-.nav li.active {
-    font-weight: bold;
-}
-
-#banner, #about {
+#about {
     max-width: 34em;
     margin: 0 auto;
 }
 
-#content {
-    max-width: 34em;
-    margin: 3.25em auto;
-}
-
 article {
-    margin: 3.25em auto;
+    margin: 0 auto 3.25em;
 }
 
-article h2 {
-    text-align: center;
-    margin-top: 2em;
+article header {
+    margin-bottom: 1.625em;
 }
 
 article header h2,
@@ -439,7 +423,7 @@ article header p {
     margin-bottom: 0;
 }
 
-article#index {
+article.summary {
     max-width: 17em;
 }
 
@@ -457,11 +441,6 @@ article#index {
 .portrait,
 .landscape {
     border-radius: 4px;
-}
-
-#archive li {
-    list-style: none;
-    text-align: center;
 }
 
 /* Media queries
@@ -485,6 +464,19 @@ article#index {
 
     .portrait {
         max-width: 100%;
+    }
+    
+    article.summary {
+        float: left;
+        padding: 0 1em;
+    }
+    
+    article.summary:nth-child(odd) {
+        clear: left;
+    }
+    
+    #about {
+        clear: both;
     }
 }
 
