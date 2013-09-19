@@ -1,8 +1,16 @@
 {% extends "base.html" %}
-{% block title %}{{ article.title|striptags }} | {{ super() }}{% endblock %}
+
+{% block pagetitle %}{% block title %}{{ article.title|striptags }}{% endblock %} | {{ SITENAME }}{% endblock %}
+{% block description %}{{ article.summary|striptags }}{% endblock %}
+{% block url %}{{ SITEURL }}/{{ article.url }}/{% endblock %}
+
+{% block meta %}
+{{ meta_og('type', 'article') }}
+{% if article.image %}
+{{ meta_og('image', SITEURL + article.image) }}
+{% endif %}
+{% endblock %}
 
 {% block content %}
 {% include '_article.html' %}
 {% endblock %}
-
-
