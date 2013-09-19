@@ -434,8 +434,13 @@ article h2 {
     margin-top: 2em;
 }
 
-article header h2 {
+article header h2,
+article header p {
     margin-bottom: 0;
+}
+
+article#index {
+    max-width: 17em;
 }
 
 .portrait,

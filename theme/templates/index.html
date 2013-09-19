@@ -5,6 +5,13 @@
 {% endblock %}
 
 {% block content %}
-{% set article = articles_page.object_list|first %}
-{% include '_article.html' %}
+{% for article in articles_page.object_list %}
+<article id="index">
+    <header>
+        <h2><a href="/{{ article.url }}" rel="bookmark">{{ article.title }}</a></h2>
+        <p><small>{{ article.locale_date }}</small></p>
+        {{ article.summary }}
+    </header>
+</article>
+{% endfor %}
 {% endblock content %}
