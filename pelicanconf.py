@@ -20,12 +20,11 @@ STATIC_PATHS = ['images', 'photos']
 PLUGIN_PATH = '../pelican-plugins'
 PLUGINS = ['neighbors', 'img_class']
 
-DEFAULT_CATEGORY = "Uncategorized"
 USE_FOLDER_AS_CATEGORY = False
 DEFAULT_DATE = "fs"
-FILENAME_METADATA ='(?P<date>\d{4}-\d{2}-\d{2})-(?P<slug>.*)'
+FILENAME_METADATA ='(?P<slug>.*)'
 DEFAULT_DATE_FORMAT = "%B %d, %Y"
-DEFAULT_PAGINATION = 1
+DEFAULT_PAGINATION = False
 TYPOGRIFY = True
 
 PAGE_URL = '{slug}'
