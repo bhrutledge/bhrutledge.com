@@ -387,10 +387,6 @@ header, article, aside, section, footer {
     box-sizing: border-box;
 }
 
-header, footer {
-    text-align: center;
-}
-
 #banner {
     max-width: 34em;
     margin: 0 auto 3.25em;
@@ -411,11 +407,11 @@ header, footer {
 }
 
 article {
-    margin: 0 auto 3.25em;
+    margin-bottom: 3.25em;
 }
 
 article header {
-    margin-bottom: 1.625em;
+    margin-bottom: 3.25em;
 }
 
 article header h2,
@@ -423,24 +419,15 @@ article header p {
     margin-bottom: 0;
 }
 
-article.summary {
-    max-width: 17em;
-}
-
 .portrait,
 .landscape {
-    margin-left: auto;
-    margin-right: auto;
     display: block;
+    margin: 3.25em auto;
+    border-radius: 4px;
 }
 
 .portrait {
     max-width: 70%;
-}
-
-.portrait,
-.landscape {
-    border-radius: 4px;
 }
 
 /* Media queries
@@ -465,22 +452,31 @@ article.summary {
     .portrait {
         max-width: 100%;
     }
+
+    #index #content {
+        max-width: 52em;
+    }
     
     article.summary {
         float: left;
+        width: 50%;
         padding: 0 1em;
     }
-    
+
+    article.summary header {
+        margin-bottom: 0;
+    }
+
     article.summary:nth-child(odd) {
         clear: left;
     }
-    
+
     #about {
         clear: both;
     }
 }
 
-@media only screen and (min-width: 1024px) { 
+@media only screen and (min-width: 1024px) {
     .landscape {
         width: 60em; /* 960/16 */
         margin-left: -13em; /* (60-34)/2 */
@@ -490,6 +486,10 @@ article.summary {
         width: 40em; /* 640/16 */
         margin-left: -3em; /* (40-34)/2 */
         max-width: none;
+    }
+
+    #index #content {
+        max-width: 60em;
     }
 }
 
