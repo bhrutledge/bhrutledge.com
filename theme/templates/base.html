@@ -9,7 +9,7 @@
     
     <title>{% block pagetitle %}{% block title %}{{ SITENAME }}{% endblock %}{% endblock %}</title>
     <meta name="description" content="{% block description %}Interested in food, personal development, sustainability, and technology. Plays music, rides bikes, takes pictures, writes code.{% endblock %}" />
-    <link rel="canonical" href="{% block url %}{{ SITEURL }}/{% endblock %}" />
+    <link rel="canonical" href="{% block url %}{{ SITEURL }}{% endblock %}" />
 
     {% macro meta_og(property, content) %}
     <meta property="og:{{ property }}" content="{{ content }}" />
@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="/theme/css/gridless.css" />
     <script src="/theme/js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body id="{% block id %}index{% endblock %}">
+<body id="{% block id %}{% endblock %}">
 
     <header id="banner">
         <h1><a href="/">{{ SITENAME }}</a></h1>
@@ -50,7 +50,7 @@
 
     <footer id="about">
         <p>Email: <a href="mailto:brian@bhrutledge.com">brian@bhrutledge.com</a><br />
-        Elsewhere: <a href="http://twitter.com/bhrut">Twitter</a>, <a href="http://facebook.com/bhrutledge">Facebook</a>, <a href="http://linkedin.com/in/bhrutledge">LinkedIn</a>, <a href="https://github.com/bhrutledge">GitHub</a>, <a href="http://www.flickr.com/photos/bhrutledge">Flickr</a></p>
+        Elsewhere: <a href="http://twitter.com/bhrut">Twitter</a>, <a href="http://facebook.com/bhrutledge">Facebook</a>, <a href="http://linkedin.com/in/bhrutledge">LinkedIn</a>, <a href="http://github.com/bhrutledge">GitHub</a>, <a href="http://flickr.com/photos/bhrutledge">Flickr</a></p>
 
         <p><small>All content &copy; 2013 Brian H. Rutledge, licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">CC BY-NC-SA</a>.</small></p>
     </footer>

@@ -27,20 +27,12 @@ DEFAULT_DATE_FORMAT = "%B %d, %Y"
 DEFAULT_PAGINATION = False
 TYPOGRIFY = True
 
+FILES_TO_COPY = (('extra/htaccess', '.htaccess'),)
 PAGE_URL = '{slug}'
-PAGE_SAVE_AS = '{slug}/index.html'
+PAGE_SAVE_AS = '{slug}.html'
 ARTICLE_URL = '{slug}'
-ARTICLE_SAVE_AS = '{slug}/index.html'
-#ARCHIVES_SAVE_AS = 'archive/index.html'
+ARTICLE_SAVE_AS = '{slug}.html'
 ARCHIVES_SAVE_AS = False
-CATEGORY_URL = 'category/{slug}/'
-#CATEGORY_SAVE_AS = 'category/{slug}/index.html'
 CATEGORY_SAVE_AS = False
-TAG_URL = 'tag/{slug}/'
-#TAG_SAVE_AS = 'tag/{slug}/index.html'
 TAG_SAVE_AS = False
-AUTHOR_URL = 'author/{slug}/'
-#AUTHOR_SAVE_AS = 'author/{slug}/index.html'
 AUTHOR_SAVE_AS = False
-
-
