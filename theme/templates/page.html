@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block pagetitle %}{% block title %}{{ page.title|striptags }}{% endblock %} | {{ SITENAME }}{% endblock %}
+{% block description %}{{ page.summary|striptags }}{% endblock %}
+{% block url %}{{ SITEURL }}/{{ page.url }}{% endblock %}
+{% block id %}{{ page.slug }}{% endblock %}
+
+{% block meta %}
+{{ meta_og('type', 'article') }}
+{% endblock %}
+
+{% block content %}
+<article>
+    <header>
+        <h2>{{ page.title }}</h2>
+    </header>
+    {{ page.content }}
+</article>
+{% endblock %}
