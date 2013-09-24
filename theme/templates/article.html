@@ -7,8 +7,10 @@
 
 {% block meta %}
 {{ meta_og('type', 'article') }}
+{{ meta_tc('card', 'summary_large_image') }}
 {% if article.image %}
 {{ meta_og('image', SITEURL + article.image) }}
+{{ meta_tc('image:src', SITEURL + article.image) }}
 {% endif %}
 {% endblock %}
 

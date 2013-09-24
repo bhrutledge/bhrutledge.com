@@ -15,13 +15,23 @@
     <meta property="og:{{ property }}" content="{{ content }}" />
     {% endmacro %}
     
+    {% macro meta_tc(property, content) %}
+    <meta name="twitter:{{ property }}" content="{{ content }}" />
+    {% endmacro %}
+    
     {{ meta_og('site_name', SITENAME) }}
     {{ meta_og('title', self.title()) }}
     {{ meta_og('description', self.description()) }}
     {{ meta_og('url', self.url()) }}
+    
+    {{ meta_tc('site', '@bhrut') }}
+    {{ meta_tc('creator', '@bhrut') }}
+    {{ meta_tc('title', self.title()) }}
+    {{ meta_tc('description', self.description()) }}
 
     {% block meta %}
     {{ meta_og('type', 'website') }}
+    {{ meta_tc('card', 'summary_large_image') }}
     {% endblock %}
     
     {% if FEED_ATOM %}
