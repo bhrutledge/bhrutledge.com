@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     
     <title>{% block pagetitle %}{% block title %}{{ SITENAME }}{% endblock %}{% endblock %}</title>
-    <meta name="description" content="{% block description %}Interested in food, personal development, sustainability, and technology. Plays music, rides bikes, takes pictures, writes code.{% endblock %}" />
+    <meta name="description" content="{% block description %}{% endblock %}" />
     <link rel="canonical" href="{% block url %}{{ SITEURL }}{% endblock %}" />
 
     {% macro meta_og(property, content) %}
