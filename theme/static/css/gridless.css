@@ -75,7 +75,7 @@ p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldse
 /*
     * Font sizes are based on the golden ratio of 16
     * See this for the modular scale: ow.ly/5jGl6
-    * Line-heights and margins are adjusted to keep a 26px (1.625em) vertical rhythm across elements 
+    * Line-heights and margins are adjusted to keep a 26px (1.625em) vertical rhythm across elements
 */
 
 h1 {
@@ -381,9 +381,9 @@ body {
     padding: 1.625em;
 }
 
-header, article, aside, section, footer { 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
+header, article, aside, section, footer {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -430,6 +430,12 @@ article header p {
     max-width: 70%;
 }
 
+.tag {
+    font-size: 0.875em; /* 14px */
+    line-height: 1.857142857;
+    font-style: italic;
+}
+
 /* Media queries
 ---------------------------------------- */
 
@@ -442,7 +448,7 @@ article header p {
 @media only screen and (min-width: 480px) {
 }
 
-@media only screen and (min-width: 768px) {    
+@media only screen and (min-width: 768px) {
     .landscape {
         width: 52em; /* 728/14 */
         margin-left: -9em; /* (52-34)/2 */
@@ -451,24 +457,6 @@ article header p {
 
     .portrait {
         max-width: 100%;
-    }
-
-    #index #content {
-        max-width: 52em;
-    }
-    
-    article.summary {
-        float: left;
-        width: 50%;
-        padding: 0 1em;
-    }
-
-    article.summary header {
-        margin-bottom: 0;
-    }
-
-    article.summary:nth-child(odd) {
-        clear: left;
     }
 }
 
@@ -482,10 +470,6 @@ article header p {
         width: 40em; /* 640/16 */
         margin-left: -3em; /* (40-34)/2 */
         max-width: none;
-    }
-
-    #index #content {
-        max-width: 60em;
     }
 }
 
@@ -517,7 +501,7 @@ article header p {
 
     /* Do not show javascript and internal links */
     a[href^="javascript:"]:after, a[href^="#"]:after {
-        content: ""; 
+        content: "";
     }
 
     /* Printing Tables: css-discuss.incutio.com/wiki/Printing_Tables */

@@ -24,9 +24,16 @@
         {{ article.title }}
         {% endif %}
         </h2>
-        <p><small>{{ article.locale_date }} | <a href="/{{ article.url }}" rel="bookmark" title="Permalink">&infin;</a></small></p>
     </header>
     {{ article.content }}
+    
+    <p>
+    {% if article.tags %}
+        {% for tag in article.tags %}<span class="tag">#{{tag}}</span> {% endfor %}
+        </br>
+    {% endif %}
+        <small>{{ article.locale_date }} | <a href="/{{ article.url }}" rel="bookmark" title="Permalink">&infin;</a></small>
+    </p>
 </article>
 
 <footer>
