@@ -30,9 +30,9 @@
     <p>
     {% if article.tags %}
         {% for tag in article.tags %}<span class="tag">#{{tag}}</span> {% endfor %}
-        </br>
+        |
     {% endif %}
-        <small>{{ article.locale_date }} | <a href="/{{ article.url }}" rel="bookmark" title="Permalink">&infin;</a></small>
+        <small><a href="/{{ article.url }}" rel="bookmark" title="Permalink">&infin;</a> | Touched on {{ article.locale_date }}</small>
     </p>
 </article>
 
