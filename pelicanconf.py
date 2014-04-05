@@ -30,10 +30,9 @@ TYPOGRIFY = True
 EXTRA_PATH_METADATA = {
     'extra/htaccess': {'path': '.htaccess'},
 }
-PAGE_URL = '{slug}'
-PAGE_SAVE_AS = '{slug}.html'
 ARTICLE_URL = '{slug}'
-ARTICLE_SAVE_AS = '{slug}.html'
+DRAFT_URL = 'drafts/{slug}'
+PAGE_URL = 'pages/{slug}'
 ARCHIVES_SAVE_AS = False
 CATEGORY_SAVE_AS = False
 TAG_SAVE_AS = False

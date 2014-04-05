@@ -26,13 +26,13 @@
         </h2>
     </header>
     {{ article.content }}
-    
+
     <p>
     {% if article.tags %}
         {% for tag in article.tags %}<span class="tag">#{{tag}}</span> {% endfor %}
         |
     {% endif %}
-        <small><a href="/{{ article.url }}" rel="bookmark" title="Permalink">&infin;</a> | Touched on {{ article.locale_date }}</small>
+        <small><a href="/{{ article.url }}" rel="bookmark" title="Permalink">&infin;</a> | {{ article.locale_date }}</small>
     </p>
 </article>
 
