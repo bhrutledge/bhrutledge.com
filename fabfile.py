@@ -13,6 +13,7 @@ def live():
     env.pelican_input = os.path.expanduser('~/Dropbox/bhrutledge.com/content')
     env.pelican_output = os.path.expanduser('~/webapps/bhrutledge')
     env.pelican_conf = 'publishconf.py'
+    env.resume_dir = os.path.expanduser('~/Dropbox/bhrutledge.com/resume')
 
 
 def clean():
