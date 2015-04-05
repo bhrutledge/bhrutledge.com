@@ -388,7 +388,7 @@ header, article, aside, section, footer {
 }
 
 #banner {
-    max-width: 34em;
+    max-width: 40em;
     margin: 0 auto 3.25em;
 }
 
@@ -397,12 +397,12 @@ header, article, aside, section, footer {
 }
 
 #content {
-    max-width: 34em;
+    max-width: 40em;
     margin: 0 auto 3.25em;
 }
 
 #about {
-    max-width: 34em;
+    max-width: 40em;
     margin: 0 auto;
 }
 
@@ -451,7 +451,7 @@ article header p {
 @media only screen and (min-width: 768px) {
     .landscape {
         width: 52em; /* 728/14 */
-        margin-left: -9em; /* (52-34)/2 */
+        margin-left: -6em; /* (52-40)/2 */
         max-width: none;
     }
 
@@ -463,12 +463,12 @@ article header p {
 @media only screen and (min-width: 1024px) {
     .landscape {
         width: 60em; /* 960/16 */
-        margin-left: -13em; /* (60-34)/2 */
+        margin-left: -10em; /* (60-40)/2 */
     }
 
     .portrait {
         width: 40em; /* 640/16 */
-        margin-left: -3em; /* (40-34)/2 */
+        margin-left: 0; /* (40-40)/2 */
         max-width: none;
     }
 }
