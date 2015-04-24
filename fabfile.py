@@ -6,7 +6,7 @@ import os
 
 
 def dev():
-    env.pelican_input = os.path.expanduser('~/Dropbox/bhrutledge.com/content')
+    env.pelican_input = os.path.expanduser('~/Dropbox/Text/bhrutledge.com')
     env.pelican_output = os.path.expanduser('~/Sites/bhrutledge')
     env.pelican_conf = 'pelicanconf.py'
 
